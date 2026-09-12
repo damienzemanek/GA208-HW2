@@ -57,7 +57,7 @@ This allows me to inline param edits like:
 
 Which of course connects to my Breakdown's `CoinSpwner` Spawn action.
 
-[MG-2 Game Build 0.0.1](https://starnightstudios.itch.io/ga208-mg1-assignment-game)
+[MG-2 Game Build 0.0.1](https://starnightstudios.itch.io/ga208-hw2)
 
 Thanks for reading! :)
 
