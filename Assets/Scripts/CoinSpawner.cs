@@ -36,7 +36,6 @@ public class CoinSpawner : MonoBehaviour
             if(spawnedCoins[i] == null) { spawnedCoins.RemoveAt(i); i--; }
             else spawnedCoins[i].transform.Translate(Vector3.left * moveSpeed);
         }
-
     }
 
     void TrySpawn()
