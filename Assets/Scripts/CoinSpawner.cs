@@ -14,7 +14,6 @@ public class CoinSpawner : MonoBehaviour
     float _spawnDelay;
     public float moveSpeed;
     float spawnTimer;
-    public float maxTimeAlive = 3;
     public List<GameObject> spawnedCoins = new();
 
     void Start()
