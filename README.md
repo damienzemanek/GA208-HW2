@@ -41,18 +41,18 @@ I took the `IsGrounded2D` check and stuck it in this project and it worked off r
 Another interesting thing is my Vector3 extension method class [Vector3EX](https://github.com/damienzemanek/ARPG/blob/main/Assets/Import/EMILtools-Private/Extensions/Vector3EX.cs) and especially the method `With():`
 
 ```csharp
-        public static Vector3 With(this Vector3 vector, float? x = null, float? y = null, float? z = null)
-            => new Vector3(x ?? vector.x, y ?? vector.y, z ?? vector.z);
+public static Vector3 With(this Vector3 vector, float? x = null, float? y = null, float? z = null)
+    => new Vector3(x ?? vector.x, y ?? vector.y, z ?? vector.z);
 ```
 
 This allows me to inline param edits like:
 ```csharp
-     void Spawn()
-    {
-        var coin = Instantiate(coinPrefab, transform.position, Quaternion.identity);
-        coin.transform.position = coin.transform.position.With(y: Random.Range(minY, maxY));
-        spawnedCoins.Add(coin);
-    }
+void Spawn()
+{
+    var coin = Instantiate(coinPrefab, transform.position, Quaternion.identity);
+    coin.transform.position = coin.transform.position.With(y: Random.Range(minY, maxY));
+    spawnedCoins.Add(coin);
+}
 ```
 
 Which of course connects to my Breakdown's `CoinSpwner` Spawn action.
