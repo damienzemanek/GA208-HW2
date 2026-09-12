@@ -2,6 +2,10 @@
 ## Devlog
 Write your Devlog here!
 
+### MG-2 Breakdown
+<img width="750" height="440" alt="a graphic breakdown of MG1" src="https://github.com/damienzemanek/GA208-HW2/blob/main/MG2%20Breakdown2.png?raw=true" />
+
+
 
 ## Open-Source Assets
 If you added any other outside assets, list them here!
