@@ -10,11 +10,17 @@ public class CoinSpawner : MonoBehaviour
     
     public GameObject coinPrefab;
     public float maxY, minY;
-    public float spawnDelay;
+    public Vector2 spawnDelay;
+    float _spawnDelay;
     public float moveSpeed;
     float spawnTimer;
     public float maxTimeAlive = 3;
     public List<GameObject> spawnedCoins = new();
+
+    void Start()
+    {
+        _spawnDelay = Random.Range(spawnDelay.x, spawnDelay.y);
+    }
 
     public void FixedUpdate()
     {
@@ -35,9 +41,10 @@ public class CoinSpawner : MonoBehaviour
 
     void TrySpawn()
     {
-        if (spawnTimer < spawnDelay) return;
+        if (spawnTimer < _spawnDelay) return;
         Spawn();
         spawnTimer = 0;
+        _spawnDelay = Random.Range(spawnDelay.x, spawnDelay.y);
     }
 
      void Spawn()

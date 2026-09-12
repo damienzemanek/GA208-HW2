@@ -836,7 +836,7 @@ MonoBehaviour:
   coinPrefab: {fileID: 7675736220683710593, guid: a40157e816f61d1428f46e7c91b56be6, type: 3}
   maxY: 0.6
   minY: -1.5
-  spawnDelay: 1
+  spawnDelay: {x: 0.4, y: 1.7}
   moveSpeed: 0.15
   maxTimeAlive: 3
   spawnedCoins: []
